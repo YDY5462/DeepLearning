@@ -1,0 +1,13 @@
+﻿# Python cache
+__pycache__/
+*.pyc
+
+# Local editor history
+.history/
+
+# Large training artifacts
+*.h5
+saved_runs/
+
+# Optional local video raw data
+data/video/
