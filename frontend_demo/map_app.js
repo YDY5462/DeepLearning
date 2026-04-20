@@ -10,12 +10,7 @@ if (typeof echarts === "undefined") {
 
 let state = DemoData.loadState();
 let selectedIndex = state.selectedIndex || 0;
-let mode = state.mode || "truth";
-if (!["truth", "pred", "error"].includes(mode)) {
-  mode = "truth";
-  state.mode = mode;
-  DemoData.saveState(state);
-}
+const mode = "error";
 
 const chartMap = echarts.init(document.getElementById("networkMap"));
 const chartMini = echarts.init(document.getElementById("miniTrend"));
@@ -35,20 +30,14 @@ function pct(v, digits = 2) {
 }
 
 function valueByMode(snapshot, i) {
-  if (mode === "truth") return snapshot.truth[i];
-  if (mode === "pred") return snapshot.pred[i];
   return snapshot.absError[i];
 }
 
 function modeLabel() {
-  if (mode === "truth") return "Truth";
-  if (mode === "pred") return "Prediction";
   return "Absolute Error";
 }
 
 function modeRamp() {
-  if (mode === "truth") return ["#dbeafe", "#1d4ed8"];
-  if (mode === "pred") return ["#dcfce7", "#0f766e"];
   return ["#fff7ed", "#b42318"];
 }
 
@@ -62,8 +51,7 @@ function modeRange(snapshot) {
 
 function nodeSize(snapshot, i) {
   const value = valueByMode(snapshot, i);
-  if (mode === "error") return 7 + Math.min(18, value / 12);
-  return 7 + Math.min(18, value / 220);
+  return 7 + Math.min(18, value / 12);
 }
 
 function setPlayStyle(isAutoplay) {
@@ -337,21 +325,6 @@ function bindMapEvents() {
   });
 }
 
-function bindModeSwitch() {
-  const buttons = document.querySelectorAll(".mode-btn");
-  buttons.forEach((x) => x.classList.toggle("active", x.dataset.mode === mode));
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      buttons.forEach((x) => x.classList.remove("active"));
-      btn.classList.add("active");
-      mode = btn.dataset.mode;
-      state.mode = mode;
-      DemoData.saveState(state);
-      renderAll();
-    });
-  });
-}
-
 function bindControls() {
   playBtn.addEventListener("click", () => {
     state.autoplay = !state.autoplay;
@@ -375,7 +348,6 @@ function bindControls() {
 function init() {
   setPlayStyle(state.autoplay);
   bindMapEvents();
-  bindModeSwitch();
   bindControls();
   renderAll();
 
