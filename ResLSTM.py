@@ -50,8 +50,9 @@ plt.rcParams["font.sans-serif"] = ["SimHei"]
 plt.rcParams["axes.unicode_minus"] = False
 
 global_start_time = time.time()
-L2_WEIGHT = 1e-5
-DROPOUT_RATE = 0.2
+# Slightly relaxed regularization to reduce underfitting in baseline retraining.
+L2_WEIGHT = 3e-6
+DROPOUT_RATE = 0.1
 ATTENTION_RESIDUAL_INIT = 0.1
 
 
@@ -344,7 +345,7 @@ def build_model(
             compile=False,
         )
 
-    model.compile(optimizer=Adam(clipnorm=1.0), loss="mse", metrics=["mse"])
+    model.compile(optimizer=Adam(), loss="mse", metrics=["mse"])
 
     train_epochs = epochs if epochs == 50 else 10
     train_inputs = [X_train_1, X_train_2, X_train_3, X_train_4]
@@ -356,15 +357,15 @@ def build_model(
     callbacks = [
         EarlyStopping(
             monitor="val_loss",
-            patience=6 if epochs == 50 else 3,
-            min_delta=1e-4,
+            patience=10 if epochs == 50 else 5,
+            min_delta=3e-5,
             restore_best_weights=True,
             verbose=1,
         ),
         ReduceLROnPlateau(
             monitor="val_loss",
-            factor=0.5,
-            patience=3 if epochs == 50 else 2,
+            factor=0.7,
+            patience=5 if epochs == 50 else 3,
             min_lr=1e-6,
             verbose=1,
         ),
@@ -377,7 +378,7 @@ def build_model(
         epochs=train_epochs,
         verbose=2,
         shuffle=False,
-        validation_split=0.1,
+        validation_split=0.05,
         callbacks=callbacks,
     )
 
