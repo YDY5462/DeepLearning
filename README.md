@@ -47,13 +47,34 @@ J. Zhang, F. Chen, Z. Cui, Y. Guo and Y. Zhu, "[Deep Learning Architecture for S
 
 ## Video Data Path (New)
 
-You can now add video-source features as the 5th input branch.
+Video processing is unified into a single file:
+`video_feature_pipeline.py`
 
-1. Prepare station-video mapping CSV from template:
-   `data/videodata/station_video_map.template.csv`
-2. Build video features:
-   `python video_feature_pipeline.py --map_csv data/videodata/station_video_map.csv --total_time_slots <time_steps> --output_csv data/videodata/video_15min.csv --time_granularity_min 15`
-3. Train as usual with `python ResLSTM.py`.
+You can add video-source features as the 5th input branch in two ways:
+
+1. Mapping CSV (recommended for controlled experiments):
+   - Prepare `data/videodata/station_video_map.csv` from template `data/videodata/station_video_map.template.csv`
+   - Run:
+     `python video_feature_pipeline.py --map_csv data/videodata/station_video_map.csv --total_time_slots <time_steps> --output_csv data/videodata/video_15min.csv --time_granularity_min 15`
+
+2. Auto-discover by filename in a directory:
+   - Place files like `station_000.mp4`, `station_001.mp4`, ...
+   - Run:
+     `python video_feature_pipeline.py --video_dir data/video --total_time_slots <time_steps> --output_csv data/videodata/video_15min.csv --time_granularity_min 15`
+
+Optional extraction settings:
+- `--backend motion|multifeature|hybrid`
+- `--slot_agg mean|max|median`
+- `--fill_missing zero|ffill|interp`
+
+If no real videos are available, you can generate proxy video features from AFC:
+`python video_feature_pipeline.py --backend proxy --total_time_slots <time_steps> --output_csv data/videodata/video_15min.csv --proxy_tg 15 --proxy_noise_std 0.03 --proxy_delay_steps 1 --proxy_missing_rate 0.1 --proxy_weights 0.3,0.5,0.2 --fill_missing interp`
+
+Then train as usual:
+`python ResLSTM.py`
+
+Force-disable video branch (ablation with same codebase):
+`python ResLSTM.py --disable_video`
 
 `load_data.py` will auto-load video matrix from:
 - `data/videodata/video_15min.csv`

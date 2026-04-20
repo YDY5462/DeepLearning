@@ -117,7 +117,14 @@ def _load_video_matrix(tg, time_steps):
     return None, False
 
 
-def Get_All_Data(TG, time_lag, TG_in_one_day, forecast_day_number, TG_in_one_week):
+def Get_All_Data(
+    TG,
+    time_lag,
+    TG_in_one_day,
+    forecast_day_number,
+    TG_in_one_week,
+    force_disable_video=False,
+):
     metro_enter = _read_csv_matrix(os.path.join("data", "inflowdata", f"in_{TG}min.csv"), dtype=int)
     metro_exit = _read_csv_matrix(os.path.join("data", "outflowdata", f"out_{TG}min.csv"), dtype=int)
 
@@ -172,19 +179,25 @@ def Get_All_Data(TG, time_lag, TG_in_one_day, forecast_day_number, TG_in_one_wee
     print("Weather train/test:", X_train_4.shape, X_test_4.shape)
 
     # Video features (optional branch)
-    video_matrix, has_video_data = _load_video_matrix(TG, time_steps)
-    if has_video_data:
-        video_norm, _, _ = _safe_minmax_norm(video_matrix)
-        X_train_5 = _build_three_pattern_features(
-            video_norm, time_lag, train_start, train_end, TG_in_one_day, TG_in_one_week
-        )
-        X_test_5 = _build_three_pattern_features(
-            video_norm, time_lag, test_start, test_end, TG_in_one_day, TG_in_one_week
-        )
-        print("Video train/test:", X_train_5.shape, X_test_5.shape)
-    else:
+    if force_disable_video:
+        print("Video branch is force-disabled by parameter.")
+        has_video_data = False
         X_train_5 = None
         X_test_5 = None
+    else:
+        video_matrix, has_video_data = _load_video_matrix(TG, time_steps)
+        if has_video_data:
+            video_norm, _, _ = _safe_minmax_norm(video_matrix)
+            X_train_5 = _build_three_pattern_features(
+                video_norm, time_lag, train_start, train_end, TG_in_one_day, TG_in_one_week
+            )
+            X_test_5 = _build_three_pattern_features(
+                video_norm, time_lag, test_start, test_end, TG_in_one_day, TG_in_one_week
+            )
+            print("Video train/test:", X_train_5.shape, X_test_5.shape)
+        else:
+            X_train_5 = None
+            X_test_5 = None
 
     return (
         X_train_1,

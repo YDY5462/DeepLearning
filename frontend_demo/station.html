@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>站点预测详情</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <script src="./vendor/echarts.min.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="page-station">
+  <div class="bg-aurora"></div>
+  <div class="grid-overlay"></div>
+
+  <main class="shell">
+    <header class="panel station-topbar reveal">
+      <div>
+        <p class="minor">Station-Level Validation View</p>
+        <h1 id="stationHeaderTitle">站点详情</h1>
+      </div>
+      <a class="back-link" href="./index.html">返回总览</a>
+    </header>
+
+    <section class="panel control-bar reveal">
+      <button id="playBtn" class="ctrl-btn">暂停自动播放</button>
+      <div class="slider-wrap">
+        <label for="sampleSlider">测试样本进度</label>
+        <input id="sampleSlider" type="range" min="0" max="0" value="0" />
+        <div class="slider-meta">
+          <span id="sampleLabel">样本 --</span>
+          <span id="sampleHint">按测试集顺序展示（无原始时间戳）</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <div class="card-grid" id="detailCards"></div>
+    </section>
+
+    <section class="station-layout">
+      <article class="panel reveal">
+        <div class="panel-head">
+          <h2>真值与预测趋势（近 36 样本）</h2>
+        </div>
+        <div id="trendChart" class="chart-detail"></div>
+      </article>
+
+      <article class="panel reveal">
+        <div class="panel-head">
+          <h2>误差等级分布（站点历史）</h2>
+        </div>
+        <div id="errorPieChart" class="chart-detail"></div>
+      </article>
+    </section>
+
+    <section class="panel table-card reveal">
+      <div class="panel-head">
+        <h2>最近 8 个样本快照</h2>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>样本</th>
+            <th>真值</th>
+            <th>预测</th>
+            <th>绝对误差</th>
+            <th>APE</th>
+            <th>等级</th>
+          </tr>
+        </thead>
+        <tbody id="snapshotTable"></tbody>
+      </table>
+    </section>
+
+    <section class="panel reveal">
+      <div class="panel-head">
+        <h2>来源与口径说明</h2>
+      </div>
+      <div class="provenance" id="provenanceBox"></div>
+    </section>
+  </main>
+
+  <script src="./model_bundle.js"></script>
+  <script src="./station_name_map.js"></script>
+  <script src="./demo_data.js"></script>
+  <script src="./station_app.js"></script>
+</body>
+</html>

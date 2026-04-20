@@ -1,0 +1,29 @@
+Inflow train/test: (1075, 276, 15) (355, 276, 15)
+Label train/test: (1075, 276) (355, 276) original: (355, 276)
+Outflow train/test: (1075, 276, 15) (355, 276, 15)
+Graph train/test: (1075, 276, 5) (355, 276, 5)
+Weather train/test: (1075, 11, 5) (355, 11, 5)
+Loaded video feature matrix from: data\videodata\video_15min.csv, shape=(276, 1800)
+Video train/test: (1075, 276, 15) (355, 276, 15)
+Video branch enabled: True
+Epoch 1/50
+16/16 - 62s - 4s/step - loss: 0.0407 - mse: 0.0059 - val_loss: 0.0349 - val_mse: 0.0072 - learning_rate: 0.0010
+Epoch 2/50
+16/16 - 29s - 2s/step - loss: 0.0262 - mse: 0.0031 - val_loss: 0.0236 - val_mse: 0.0057 - learning_rate: 0.0010
+Epoch 3/50
+16/16 - 30s - 2s/step - loss: 0.0164 - mse: 0.0017 - val_loss: 0.0166 - val_mse: 0.0053 - learning_rate: 0.0010
+Epoch 4/50
+16/16 - 30s - 2s/step - loss: 0.0108 - mse: 0.0014 - val_loss: 0.0133 - val_mse: 0.0058 - learning_rate: 0.0010
+Epoch 5/50
+16/16 - 30s - 2s/step - loss: 0.0079 - mse: 0.0013 - val_loss: 0.0112 - val_mse: 0.0056 - learning_rate: 0.0010
+Epoch 6/50
+16/16 - 30s - 2s/step - loss: 0.0062 - mse: 0.0013 - val_loss: 0.0087 - val_mse: 0.0044 - learning_rate: 0.0010
+Epoch 7/50
+16/16 - 30s - 2s/step - loss: 0.0053 - mse: 0.0013 - val_loss: 0.0090 - val_mse: 0.0055 - learning_rate: 0.0010
+Epoch 8/50
+16/16 - 31s - 2s/step - loss: 0.0043 - mse: 0.0011 - val_loss: 0.0089 - val_mse: 0.0059 - learning_rate: 0.0010
+Epoch 9/50
+16/16 - 30s - 2s/step - loss: 0.0041 - mse: 0.0015 - val_loss: 0.0072 - val_mse: 0.0048 - learning_rate: 0.0010
+Epoch 10/50
+16/16 - 30s - 2s/step - loss: 0.0035 - mse: 0.0012 - val_loss: 0.0076 - val_mse: 0.0055 - learning_rate: 0.0010
+Epoch 11/50

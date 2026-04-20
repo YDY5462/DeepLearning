@@ -1,0 +1,663 @@
+Inflow train/test: (1075, 276, 15) (355, 276, 15)
+Label train/test: (1075, 276) (355, 276) original: (355, 276)
+Outflow train/test: (1075, 276, 15) (355, 276, 15)
+Graph train/test: (1075, 276, 5) (355, 276, 5)
+Weather train/test: (1075, 11, 5) (355, 11, 5)
+Video branch is force-disabled by parameter.
+Video branch enabled: False
+Epoch 1/50
+16/16 - 38s - 2s/step - loss: 0.0346 - mse: 0.0065 - val_loss: 0.0297 - val_mse: 0.0073 - learning_rate: 0.0010
+Epoch 2/50
+16/16 - 20s - 1s/step - loss: 0.0204 - mse: 0.0022 - val_loss: 0.0190 - val_mse: 0.0055 - learning_rate: 0.0010
+Epoch 3/50
+16/16 - 20s - 1s/step - loss: 0.0121 - mse: 0.0014 - val_loss: 0.0144 - val_mse: 0.0065 - learning_rate: 0.0010
+Epoch 4/50
+16/16 - 20s - 1s/step - loss: 0.0077 - mse: 0.0012 - val_loss: 0.0102 - val_mse: 0.0050 - learning_rate: 0.0010
+Epoch 5/50
+16/16 - 20s - 1s/step - loss: 0.0057 - mse: 0.0013 - val_loss: 0.0091 - val_mse: 0.0054 - learning_rate: 0.0010
+Epoch 6/50
+16/16 - 20s - 1s/step - loss: 0.0045 - mse: 0.0012 - val_loss: 0.0089 - val_mse: 0.0059 - learning_rate: 0.0010
+Epoch 7/50
+16/16 - 25s - 2s/step - loss: 0.0038 - mse: 0.0012 - val_loss: 0.0080 - val_mse: 0.0057 - learning_rate: 0.0010
+Epoch 8/50
+16/16 - 27s - 2s/step - loss: 0.0032 - mse: 0.0012 - val_loss: 0.0070 - val_mse: 0.0052 - learning_rate: 0.0010
+Epoch 9/50
+16/16 - 27s - 2s/step - loss: 0.0029 - mse: 0.0011 - val_loss: 0.0072 - val_mse: 0.0056 - learning_rate: 0.0010
+Epoch 10/50
+16/16 - 27s - 2s/step - loss: 0.0026 - mse: 0.0012 - val_loss: 0.0077 - val_mse: 0.0064 - learning_rate: 0.0010
+Epoch 11/50
+16/16 - 27s - 2s/step - loss: 0.0024 - mse: 0.0011 - val_loss: 0.0062 - val_mse: 0.0051 - learning_rate: 0.0010
+Epoch 12/50
+16/16 - 27s - 2s/step - loss: 0.0022 - mse: 0.0012 - val_loss: 0.0066 - val_mse: 0.0057 - learning_rate: 0.0010
+Epoch 13/50
+16/16 - 27s - 2s/step - loss: 0.0023 - mse: 0.0014 - val_loss: 0.0060 - val_mse: 0.0050 - learning_rate: 0.0010
+Epoch 14/50
+16/16 - 24s - 2s/step - loss: 0.0021 - mse: 0.0012 - val_loss: 0.0061 - val_mse: 0.0053 - learning_rate: 0.0010
+Epoch 15/50
+16/16 - 24s - 2s/step - loss: 0.0020 - mse: 0.0012 - val_loss: 0.0067 - val_mse: 0.0060 - learning_rate: 0.0010
+Epoch 16/50
+
+Epoch 16: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 27s - 2s/step - loss: 0.0019 - mse: 0.0012 - val_loss: 0.0065 - val_mse: 0.0058 - learning_rate: 0.0010
+Epoch 17/50
+16/16 - 27s - 2s/step - loss: 0.0018 - mse: 0.0011 - val_loss: 0.0061 - val_mse: 0.0055 - learning_rate: 5.0000e-04
+Epoch 18/50
+16/16 - 28s - 2s/step - loss: 0.0018 - mse: 0.0012 - val_loss: 0.0056 - val_mse: 0.0050 - learning_rate: 5.0000e-04
+Epoch 19/50
+16/16 - 28s - 2s/step - loss: 0.0016 - mse: 0.0011 - val_loss: 0.0056 - val_mse: 0.0051 - learning_rate: 5.0000e-04
+Epoch 20/50
+16/16 - 28s - 2s/step - loss: 0.0014 - mse: 9.9780e-04 - val_loss: 0.0054 - val_mse: 0.0050 - learning_rate: 5.0000e-04
+Epoch 21/50
+16/16 - 28s - 2s/step - loss: 0.0014 - mse: 0.0010 - val_loss: 0.0053 - val_mse: 0.0049 - learning_rate: 5.0000e-04
+Epoch 22/50
+16/16 - 28s - 2s/step - loss: 0.0015 - mse: 0.0011 - val_loss: 0.0055 - val_mse: 0.0051 - learning_rate: 5.0000e-04
+Epoch 23/50
+16/16 - 28s - 2s/step - loss: 0.0015 - mse: 0.0011 - val_loss: 0.0051 - val_mse: 0.0048 - learning_rate: 5.0000e-04
+Epoch 24/50
+16/16 - 27s - 2s/step - loss: 0.0014 - mse: 0.0010 - val_loss: 0.0052 - val_mse: 0.0049 - learning_rate: 5.0000e-04
+Epoch 25/50
+16/16 - 28s - 2s/step - loss: 0.0011 - mse: 7.4892e-04 - val_loss: 0.0049 - val_mse: 0.0046 - learning_rate: 5.0000e-04
+Epoch 26/50
+16/16 - 28s - 2s/step - loss: 0.0015 - mse: 0.0012 - val_loss: 0.0046 - val_mse: 0.0043 - learning_rate: 5.0000e-04
+Epoch 27/50
+16/16 - 28s - 2s/step - loss: 0.0011 - mse: 8.5025e-04 - val_loss: 0.0043 - val_mse: 0.0040 - learning_rate: 5.0000e-04
+Epoch 28/50
+16/16 - 27s - 2s/step - loss: 0.0013 - mse: 0.0011 - val_loss: 0.0043 - val_mse: 0.0041 - learning_rate: 5.0000e-04
+Epoch 29/50
+16/16 - 27s - 2s/step - loss: 0.0012 - mse: 9.8282e-04 - val_loss: 0.0038 - val_mse: 0.0036 - learning_rate: 5.0000e-04
+Epoch 30/50
+16/16 - 27s - 2s/step - loss: 0.0015 - mse: 0.0013 - val_loss: 0.0038 - val_mse: 0.0035 - learning_rate: 5.0000e-04
+Epoch 31/50
+16/16 - 27s - 2s/step - loss: 0.0012 - mse: 9.5187e-04 - val_loss: 0.0033 - val_mse: 0.0031 - learning_rate: 5.0000e-04
+Epoch 32/50
+16/16 - 28s - 2s/step - loss: 0.0013 - mse: 0.0011 - val_loss: 0.0034 - val_mse: 0.0031 - learning_rate: 5.0000e-04
+Epoch 33/50
+16/16 - 27s - 2s/step - loss: 0.0012 - mse: 9.8970e-04 - val_loss: 0.0031 - val_mse: 0.0029 - learning_rate: 5.0000e-04
+Epoch 34/50
+16/16 - 28s - 2s/step - loss: 0.0013 - mse: 0.0011 - val_loss: 0.0021 - val_mse: 0.0019 - learning_rate: 5.0000e-04
+Epoch 35/50
+16/16 - 28s - 2s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 0.0021 - val_mse: 0.0019 - learning_rate: 5.0000e-04
+Epoch 36/50
+16/16 - 27s - 2s/step - loss: 0.0015 - mse: 0.0013 - val_loss: 0.0013 - val_mse: 0.0010 - learning_rate: 5.0000e-04
+Epoch 37/50
+16/16 - 28s - 2s/step - loss: 0.0014 - mse: 0.0012 - val_loss: 0.0012 - val_mse: 0.0010 - learning_rate: 5.0000e-04
+Epoch 38/50
+16/16 - 28s - 2s/step - loss: 0.0012 - mse: 0.0010 - val_loss: 0.0011 - val_mse: 8.9818e-04 - learning_rate: 5.0000e-04
+Epoch 39/50
+16/16 - 28s - 2s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 0.0013 - val_mse: 0.0012 - learning_rate: 5.0000e-04
+Epoch 40/50
+16/16 - 28s - 2s/step - loss: 0.0011 - mse: 9.2239e-04 - val_loss: 0.0011 - val_mse: 9.6604e-04 - learning_rate: 5.0000e-04
+Epoch 41/50
+
+Epoch 41: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+16/16 - 28s - 2s/step - loss: 0.0013 - mse: 0.0011 - val_loss: 0.0011 - val_mse: 9.1638e-04 - learning_rate: 5.0000e-04
+Epoch 42/50
+16/16 - 28s - 2s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 0.0014 - val_mse: 0.0012 - learning_rate: 2.5000e-04
+Epoch 43/50
+16/16 - 28s - 2s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 8.9411e-04 - val_mse: 7.5870e-04 - learning_rate: 2.5000e-04
+Epoch 44/50
+16/16 - 28s - 2s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 9.2664e-04 - val_mse: 7.9633e-04 - learning_rate: 2.5000e-04
+Epoch 45/50
+16/16 - 28s - 2s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 8.0187e-04 - val_mse: 6.7557e-04 - learning_rate: 2.5000e-04
+Epoch 46/50
+
+Epoch 46: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+16/16 - 28s - 2s/step - loss: 0.0011 - mse: 9.9842e-04 - val_loss: 9.0541e-04 - val_mse: 7.8416e-04 - learning_rate: 2.5000e-04
+Epoch 47/50
+16/16 - 28s - 2s/step - loss: 9.9766e-04 - mse: 8.7691e-04 - val_loss: 7.3141e-04 - val_mse: 6.1231e-04 - learning_rate: 1.2500e-04
+Epoch 48/50
+16/16 - 28s - 2s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 5.7780e-04 - val_mse: 4.6014e-04 - learning_rate: 1.2500e-04
+Epoch 49/50
+16/16 - 28s - 2s/step - loss: 0.0010 - mse: 9.2918e-04 - val_loss: 5.9432e-04 - val_mse: 4.7959e-04 - learning_rate: 1.2500e-04
+Epoch 50/50
+16/16 - 27s - 2s/step - loss: 0.0011 - mse: 9.7194e-04 - val_loss: 5.3426e-04 - val_mse: 4.2190e-04 - learning_rate: 1.2500e-04
+Restoring model weights from the end of the best epoch: 48.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m7s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 426ms/step
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 438ms/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m0s[0m 437ms/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m0s[0m 440ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 637ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m5s[0m 643ms/step
+RMSE is: 103.00159299160339
+R2 is£º0.8595730712755728
+MAE is£º57.436425801183915
+WMAPE is0.21070372302412152
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 61s - 4s/step - loss: 0.0016 - mse: 0.0015 - val_loss: 0.0017 - val_mse: 0.0016 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 31s - 2s/step - loss: 0.0015 - mse: 0.0013 - val_loss: 5.9231e-04 - val_mse: 3.7378e-04 - learning_rate: 0.0010
+Epoch 3/10
+16/16 - 31s - 2s/step - loss: 0.0013 - mse: 0.0011 - val_loss: 4.0990e-04 - val_mse: 2.1754e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 29s - 2s/step - loss: 0.0013 - mse: 0.0011 - val_loss: 3.6759e-04 - val_mse: 2.0253e-04 - learning_rate: 0.0010
+Epoch 5/10
+
+Epoch 5: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 30s - 2s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 3.9383e-04 - val_mse: 2.4749e-04 - learning_rate: 0.0010
+Epoch 6/10
+16/16 - 29s - 2s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 3.7346e-04 - val_mse: 2.3783e-04 - learning_rate: 5.0000e-04
+Epoch 6: early stopping
+Restoring model weights from the end of the best epoch: 3.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m5s[0m 1s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 432ms/step
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 479ms/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m0s[0m 494ms/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m0s[0m 496ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 727ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m5s[0m 734ms/step
+RMSE is: 68.88805369308048
+R2 is£º0.9248544789109313
+MAE is£º39.74265156154317
+WMAPE is0.1471386945504646
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 68s - 4s/step - loss: 0.0013 - mse: 0.0011 - val_loss: 9.8564e-04 - val_mse: 8.1351e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 35s - 2s/step - loss: 0.0013 - mse: 0.0011 - val_loss: 3.9744e-04 - val_mse: 2.4576e-04 - learning_rate: 0.0010
+Epoch 3/10
+16/16 - 34s - 2s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 4.9383e-04 - val_mse: 3.6049e-04 - learning_rate: 0.0010
+Epoch 4/10
+
+Epoch 4: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 34s - 2s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 5.9725e-04 - val_mse: 4.7026e-04 - learning_rate: 0.0010
+Epoch 5/10
+16/16 - 34s - 2s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 4.6192e-04 - val_mse: 3.3807e-04 - learning_rate: 5.0000e-04
+Epoch 5: early stopping
+Restoring model weights from the end of the best epoch: 2.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m9s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 613ms/step
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 592ms/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 605ms/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m0s[0m 608ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 813ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m6s[0m 822ms/step
+RMSE is: 74.6859294565416
+R2 is£º0.9148274405122032
+MAE is£º38.895019391712594
+WMAPE is0.14474335781622796
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 67s - 4s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 6.9258e-04 - val_mse: 5.2286e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 35s - 2s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 3.3368e-04 - val_mse: 1.6930e-04 - learning_rate: 0.0010
+Epoch 3/10
+16/16 - 36s - 2s/step - loss: 0.0011 - mse: 9.8659e-04 - val_loss: 3.2377e-04 - val_mse: 1.7927e-04 - learning_rate: 0.0010
+Epoch 4/10
+
+Epoch 4: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 36s - 2s/step - loss: 0.0013 - mse: 0.0011 - val_loss: 4.0837e-04 - val_mse: 2.7641e-04 - learning_rate: 0.0010
+Epoch 5/10
+16/16 - 35s - 2s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 5.3512e-04 - val_mse: 4.1388e-04 - learning_rate: 5.0000e-04
+Epoch 5: early stopping
+Restoring model weights from the end of the best epoch: 2.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m9s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 748ms/step
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 708ms/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 694ms/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m0s[0m 688ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 897ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m6s[0m 904ms/step
+RMSE is: 60.82084602575024
+R2 is£º0.9331893057311514
+MAE is£º33.79547866911615
+WMAPE is0.1255139090950383
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 70s - 4s/step - loss: 0.0014 - mse: 0.0012 - val_loss: 6.2081e-04 - val_mse: 4.7369e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 39s - 2s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 6.2710e-04 - val_mse: 4.9912e-04 - learning_rate: 0.0010
+Epoch 3/10
+16/16 - 39s - 2s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 5.1694e-04 - val_mse: 4.0162e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 39s - 2s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 3.8029e-04 - val_mse: 2.6869e-04 - learning_rate: 0.0010
+Epoch 5/10
+16/16 - 39s - 2s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 5.6033e-04 - val_mse: 4.3646e-04 - learning_rate: 0.0010
+Epoch 6/10
+
+Epoch 6: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 38s - 2s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 8.6713e-04 - val_mse: 7.2834e-04 - learning_rate: 0.0010
+Epoch 7/10
+16/16 - 38s - 2s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 3.5145e-04 - val_mse: 2.1454e-04 - learning_rate: 5.0000e-04
+Epoch 7: early stopping
+Restoring model weights from the end of the best epoch: 4.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m10s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 774ms/step
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 764ms/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 763ms/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m0s[0m 768ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 940ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m7s[0m 947ms/step
+RMSE is: 77.52477423723853
+R2 is£º0.9034247742838266
+MAE is£º45.184843845682785
+WMAPE is0.1671323448110379
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 74s - 5s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 8.7583e-04 - val_mse: 7.6188e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 43s - 3s/step - loss: 0.0011 - mse: 9.6410e-04 - val_loss: 4.4921e-04 - val_mse: 3.2376e-04 - learning_rate: 0.0010
+Epoch 3/10
+16/16 - 42s - 3s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 5.7809e-04 - val_mse: 4.6123e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 42s - 3s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 3.4558e-04 - val_mse: 2.3757e-04 - learning_rate: 0.0010
+Epoch 5/10
+16/16 - 42s - 3s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 5.4727e-04 - val_mse: 4.4535e-04 - learning_rate: 0.0010
+Epoch 6/10
+
+Epoch 6: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 42s - 3s/step - loss: 0.0011 - mse: 9.7325e-04 - val_loss: 6.6202e-04 - val_mse: 5.6194e-04 - learning_rate: 0.0010
+Epoch 7/10
+16/16 - 42s - 3s/step - loss: 9.6680e-04 - mse: 8.6741e-04 - val_loss: 4.6375e-04 - val_mse: 3.6699e-04 - learning_rate: 5.0000e-04
+Epoch 7: early stopping
+Restoring model weights from the end of the best epoch: 4.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m10s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 870ms/step
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 861ms/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 858ms/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m0s[0m 861ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 1s/step   
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m7s[0m 1s/step
+RMSE is: 73.13144052585321
+R2 is£º0.9120225421269965
+MAE is£º41.46970810369463
+WMAPE is0.15337794055867002
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 80s - 5s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 5.2900e-04 - val_mse: 4.2414e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 47s - 3s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 4.7018e-04 - val_mse: 3.6955e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 46s - 3s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 9.1355e-04 - val_mse: 8.1287e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 46s - 3s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 3.7046e-04 - val_mse: 2.7117e-04 - learning_rate: 5.0000e-04
+Epoch 5/10
+16/16 - 46s - 3s/step - loss: 0.0011 - mse: 0.0011 - val_loss: 5.4485e-04 - val_mse: 4.5298e-04 - learning_rate: 5.0000e-04
+Epoch 6/10
+
+Epoch 6: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+16/16 - 45s - 3s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 4.8983e-04 - val_mse: 4.0368e-04 - learning_rate: 5.0000e-04
+Epoch 7/10
+16/16 - 46s - 3s/step - loss: 9.7747e-04 - mse: 8.9290e-04 - val_loss: 4.5465e-04 - val_mse: 3.7267e-04 - learning_rate: 2.5000e-04
+Epoch 7: early stopping
+Restoring model weights from the end of the best epoch: 4.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m10s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 941ms/step
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 933ms/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 931ms/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m0s[0m 931ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 1s/step   
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m8s[0m 1s/step
+RMSE is: 76.41410172098382
+R2 is£º0.9079875297214673
+MAE is£º42.81971830985916
+WMAPE is0.15769456285209743
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 82s - 5s/step - loss: 0.0011 - mse: 9.8780e-04 - val_loss: 3.9450e-04 - val_mse: 2.9812e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 52s - 3s/step - loss: 0.0011 - mse: 9.6625e-04 - val_loss: 7.2138e-04 - val_mse: 6.2571e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 52s - 3s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 6.0076e-04 - val_mse: 5.0195e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 52s - 3s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 4.4019e-04 - val_mse: 3.4670e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m11s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 1s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 1s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 1s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m8s[0m 1s/step
+RMSE is: 80.61889743602784
+R2 is£º0.9003611930599029
+MAE is£º44.45634823433353
+WMAPE is0.16425202225895646
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 87s - 5s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 5.5562e-04 - val_mse: 4.5252e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 51s - 3s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 3.7670e-04 - val_mse: 2.7395e-04 - learning_rate: 0.0010
+Epoch 3/10
+16/16 - 47s - 3s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 4.6763e-04 - val_mse: 3.7077e-04 - learning_rate: 0.0010
+Epoch 4/10
+
+Epoch 4: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 36s - 2s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 5.3340e-04 - val_mse: 4.4179e-04 - learning_rate: 0.0010
+Epoch 5/10
+16/16 - 37s - 2s/step - loss: 0.0011 - mse: 0.0011 - val_loss: 5.3137e-04 - val_mse: 4.4597e-04 - learning_rate: 5.0000e-04
+Epoch 5: early stopping
+Restoring model weights from the end of the best epoch: 2.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m7s[0m 1s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 795ms/step
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 774ms/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m1s[0m 771ms/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m0s[0m 768ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 845ms/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m6s[0m 848ms/step
+RMSE is: 77.08443834408754
+R2 is£º0.9124579470268195
+MAE is£º43.17552561747295
+WMAPE is0.15979072623003643
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 86s - 5s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 5.5368e-04 - val_mse: 4.5655e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 58s - 4s/step - loss: 0.0010 - mse: 9.3536e-04 - val_loss: 6.4186e-04 - val_mse: 5.5175e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 58s - 4s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 8.0294e-04 - val_mse: 6.9868e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 57s - 4s/step - loss: 0.0011 - mse: 9.5921e-04 - val_loss: 4.8350e-04 - val_mse: 3.7497e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m10s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 1s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 1s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 1s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m9s[0m 1s/step
+RMSE is: 103.66688066772828
+R2 is£º0.8466480898191887
+MAE is£º58.18916105327618
+WMAPE is0.2155395879184279
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 90s - 6s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 5.4131e-04 - val_mse: 4.3547e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 56s - 4s/step - loss: 0.0011 - mse: 9.9131e-04 - val_loss: 3.9807e-04 - val_mse: 2.9044e-04 - learning_rate: 0.0010
+Epoch 3/10
+16/16 - 56s - 3s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 5.1900e-04 - val_mse: 4.1646e-04 - learning_rate: 0.0010
+Epoch 4/10
+
+Epoch 4: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 56s - 3s/step - loss: 0.0011 - mse: 9.8655e-04 - val_loss: 3.6435e-04 - val_mse: 2.6678e-04 - learning_rate: 0.0010
+Epoch 5/10
+16/16 - 57s - 4s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 4.6996e-04 - val_mse: 3.7950e-04 - learning_rate: 5.0000e-04
+Epoch 5: early stopping
+Restoring model weights from the end of the best epoch: 2.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m11s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 1s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 1s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 1s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m9s[0m 1s/step
+RMSE is: 77.8504997169892
+R2 is£º0.913749560055744
+MAE is£º41.73370075525617
+WMAPE is0.15554793189200977
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 91s - 6s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 5.6060e-04 - val_mse: 4.6399e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 56s - 4s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 5.2921e-04 - val_mse: 4.3776e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 56s - 3s/step - loss: 0.0011 - mse: 9.8169e-04 - val_loss: 6.9220e-04 - val_mse: 6.0645e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 57s - 4s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 5.8303e-04 - val_mse: 5.0198e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m11s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 1s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 1s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 1s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m9s[0m 1s/step
+RMSE is: 105.82735129106224
+R2 is£º0.8463245672247125
+MAE is£º56.53954888752806
+WMAPE is0.20951437033815268
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 94s - 6s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 2.9668e-04 - val_mse: 1.9425e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 62s - 4s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 5.4752e-04 - val_mse: 4.3851e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 61s - 4s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 8.2393e-04 - val_mse: 6.9135e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 62s - 4s/step - loss: 0.0011 - mse: 9.5134e-04 - val_loss: 3.7235e-04 - val_mse: 2.4717e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m12s[0m 3s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m5s[0m 1s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 1s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 1s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m10s[0m 1s/step
+RMSE is: 62.97972826781887
+R2 is£º0.9315911354128631
+MAE is£º36.238946723821186
+WMAPE is0.13460702040771386
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 106s - 7s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 4.8457e-04 - val_mse: 3.8740e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 73s - 5s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 7.7493e-04 - val_mse: 6.8161e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 70s - 4s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 4.8453e-04 - val_mse: 3.5819e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 70s - 4s/step - loss: 0.0011 - mse: 9.4027e-04 - val_loss: 4.5247e-04 - val_mse: 3.2531e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m13s[0m 3s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m5s[0m 1s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 1s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 1s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 2s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m10s[0m 2s/step
+RMSE is: 93.07210307437936
+R2 is£º0.8795172723714312
+MAE is£º52.1868136354358
+WMAPE is0.19290938882075764
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 99s - 6s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 3.2181e-04 - val_mse: 2.2224e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 67s - 4s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 3.2525e-04 - val_mse: 2.2350e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 69s - 4s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 4.3950e-04 - val_mse: 3.4550e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 69s - 4s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 6.8670e-04 - val_mse: 5.9957e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m13s[0m 3s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m5s[0m 1s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 1s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 1s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 2s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m10s[0m 2s/step
+RMSE is: 68.0629273841406
+R2 is£º0.9192880389644994
+MAE is£º39.02260665441927
+WMAPE is0.143859716332426
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 107s - 7s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 4.9680e-04 - val_mse: 4.0132e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 74s - 5s/step - loss: 9.7347e-04 - mse: 8.8069e-04 - val_loss: 4.7516e-04 - val_mse: 3.8689e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 75s - 5s/step - loss: 0.0012 - mse: 0.0012 - val_loss: 6.0760e-04 - val_mse: 5.2445e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 73s - 5s/step - loss: 0.0010 - mse: 9.6475e-04 - val_loss: 6.4439e-04 - val_mse: 5.5923e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m14s[0m 3s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m6s[0m 2s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 2s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 2s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 2s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 2s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m11s[0m 2s/step
+RMSE is: 91.19977331543255
+R2 is£º0.8841664171435548
+MAE is£º49.39403959991836
+WMAPE is0.1829378357145621
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 101s - 6s/step - loss: 0.0011 - mse: 9.8225e-04 - val_loss: 4.2137e-04 - val_mse: 3.2051e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 71s - 4s/step - loss: 0.0011 - mse: 9.5777e-04 - val_loss: 4.2311e-04 - val_mse: 3.2756e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 81s - 5s/step - loss: 0.0010 - mse: 9.3922e-04 - val_loss: 3.8293e-04 - val_mse: 2.9663e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 78s - 5s/step - loss: 0.0010 - mse: 9.5016e-04 - val_loss: 5.5924e-04 - val_mse: 4.7922e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m13s[0m 3s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m6s[0m 2s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 2s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 2s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 2s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 2s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m11s[0m 2s/step
+RMSE is: 87.54377827647954
+R2 is£º0.8942123841045508
+MAE is£º46.89317207593387
+WMAPE is0.1731192529085003
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 108s - 7s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 3.4434e-04 - val_mse: 2.3378e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 60s - 4s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 3.5908e-04 - val_mse: 2.4898e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 57s - 4s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 5.2574e-04 - val_mse: 4.1720e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 57s - 4s/step - loss: 0.0013 - mse: 0.0011 - val_loss: 6.3959e-04 - val_mse: 5.3306e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m9s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 1s/step
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 1s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 1s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m8s[0m 1s/step
+RMSE is: 71.98549650082792
+R2 is£º0.902105563655653
+MAE is£º42.580924678505816
+WMAPE is0.157326761230681
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 85s - 5s/step - loss: 0.0011 - mse: 9.4818e-04 - val_loss: 4.4312e-04 - val_mse: 3.3850e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 56s - 4s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 4.9864e-04 - val_mse: 4.0021e-04 - learning_rate: 0.0010
+Epoch 3/10
+16/16 - 64s - 4s/step - loss: 0.0011 - mse: 0.0010 - val_loss: 3.2550e-04 - val_mse: 2.1999e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 55s - 3s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 3.8282e-04 - val_mse: 2.7108e-04 - learning_rate: 0.0010
+Epoch 5/10
+
+Epoch 5: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 59s - 4s/step - loss: 0.0014 - mse: 0.0012 - val_loss: 4.4870e-04 - val_mse: 3.4241e-04 - learning_rate: 0.0010
+Epoch 6/10
+16/16 - 61s - 4s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 3.5902e-04 - val_mse: 2.6087e-04 - learning_rate: 5.0000e-04
+Epoch 6: early stopping
+Restoring model weights from the end of the best epoch: 3.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m9s[0m 2s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m5s[0m 1s/step
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 1s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m2s[0m 1s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 1s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m9s[0m 1s/step
+RMSE is: 68.52969782195217
+R2 is£º0.918383749299622
+MAE is£º38.16351296182894
+WMAPE is0.14155369192538567
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 101s - 6s/step - loss: 0.0011 - mse: 9.7978e-04 - val_loss: 4.2327e-04 - val_mse: 3.2738e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 82s - 5s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 3.8614e-04 - val_mse: 2.9660e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 78s - 5s/step - loss: 0.0013 - mse: 0.0012 - val_loss: 4.0538e-04 - val_mse: 3.0324e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 85s - 5s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 5.0577e-04 - val_mse: 4.0597e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m13s[0m 3s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m6s[0m 2s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 2s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 2s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 2s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 2s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m11s[0m 2s/step
+RMSE is: 89.48971005515817
+R2 is£º0.8898749541857277
+MAE is£º47.46376811594203
+WMAPE is0.17635395729310857
+You must install pydot (`pip install pydot`) for `plot_model` to work.
+Epoch 1/10
+16/16 - 125s - 8s/step - loss: 0.0014 - mse: 0.0013 - val_loss: 3.4303e-04 - val_mse: 2.4474e-04 - learning_rate: 0.0010
+Epoch 2/10
+16/16 - 81s - 5s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 2.8019e-04 - val_mse: 1.8323e-04 - learning_rate: 0.0010
+Epoch 3/10
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+16/16 - 85s - 5s/step - loss: 0.0012 - mse: 0.0011 - val_loss: 3.7096e-04 - val_mse: 2.8024e-04 - learning_rate: 0.0010
+Epoch 4/10
+16/16 - 81s - 5s/step - loss: 0.0012 - mse: 0.0012 - val_loss: 3.9835e-04 - val_mse: 3.1378e-04 - learning_rate: 5.0000e-04
+Epoch 4: early stopping
+Restoring model weights from the end of the best epoch: 1.
+
+[1m1/6[0m [32m©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m14s[0m 3s/step
+[1m2/6[0m [32m©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m6s[0m 2s/step 
+[1m3/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m [1m4s[0m 2s/step
+[1m4/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥©¥©¥©¥[0m [1m3s[0m 2s/step
+[1m5/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m©¥©¥©¥©¥[0m [1m1s[0m 2s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m0s[0m 2s/step
+[1m6/6[0m [32m©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥[0m[37m[0m [1m12s[0m 2s/step
+RMSE is: 73.20659110085845
+R2 is£º0.9191719450417027
+MAE is£º40.519799959175344
+WMAPE is0.15023010158818426
+You must install pydot (`pip install pydot`) for `plot_model` to work.

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>多源地铁客流预测可视分析</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <script src="./vendor/echarts.min.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="page-main">
+  <div class="bg-aurora"></div>
+  <div class="grid-overlay"></div>
+
+  <main class="shell">
+    <header class="panel topbar reveal">
+      <div>
+        <p class="minor">ResNet-LSTM-GCN Graduation Demo</p>
+        <h1>多源地铁客流预测可视分析</h1>
+        <p class="subtitle">展示数据来自 `final result/15` 真实测试输出，不使用随机 mock。</p>
+      </div>
+      <div class="chips">
+        <span class="chip good">模型输出已接入</span>
+        <span class="chip" id="datasetTag">数据集: --</span>
+        <span class="chip" id="updateTime">刷新时间: --</span>
+      </div>
+    </header>
+
+    <section class="panel control-bar reveal">
+      <button id="playBtn" class="ctrl-btn">暂停自动播放</button>
+      <div class="slider-wrap">
+        <label for="sampleSlider">测试样本进度</label>
+        <input id="sampleSlider" type="range" min="0" max="0" value="0" />
+        <div class="slider-meta">
+          <span id="sampleLabel">样本 --</span>
+          <span id="sampleHint">按测试集顺序展示（无原始时间戳）</span>
+        </div>
+      </div>
+      <button id="randomStationBtn" class="ghost-btn">随机站点</button>
+    </section>
+
+    <section class="layout-main">
+      <article class="panel map-panel reveal">
+        <div class="panel-head">
+          <h2>站点拓扑示意（非地理坐标）</h2>
+          <div class="mode-switch">
+            <button class="mode-btn active" data-mode="truth">真值</button>
+            <button class="mode-btn" data-mode="pred">预测值</button>
+            <button class="mode-btn" data-mode="error">绝对误差</button>
+          </div>
+        </div>
+        <div id="networkMap" class="chart-map"></div>
+        <p class="hint">悬停查看站点真值/预测/误差，点击进入站点详情页。</p>
+      </article>
+
+      <aside class="panel side-panel reveal">
+        <div class="panel-head">
+          <h2>站点样本详情</h2>
+          <a id="detailLink" class="detail-link" href="./station.html?sid=S001&t=0">进入站点页</a>
+        </div>
+
+        <div class="station-card">
+          <h3 id="stationTitle">S001</h3>
+          <p id="stationLine">线路: L01</p>
+          <div class="station-grid">
+            <div>
+              <label>当前样本真值</label>
+              <strong id="curTruth">-</strong>
+            </div>
+            <div>
+              <label>当前样本预测</label>
+              <strong id="curPred">-</strong>
+            </div>
+            <div>
+              <label>绝对误差</label>
+              <strong id="curAbsError">-</strong>
+            </div>
+            <div>
+              <label>APE</label>
+              <strong id="curAPE">-</strong>
+            </div>
+            <div>
+              <label>站点平均 MAE</label>
+              <strong id="stationMAE">-</strong>
+            </div>
+            <div>
+              <label>误差等级</label>
+              <strong id="errorRisk">-</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-head mini-head">
+          <h2>最近 24 个样本趋势</h2>
+        </div>
+        <div id="miniTrend" class="chart-mini"></div>
+      </aside>
+    </section>
+
+    <section class="layout-bottom">
+      <article class="panel reveal">
+        <div class="panel-head">
+          <h2>样本级与全局指标</h2>
+        </div>
+        <div class="kpi-row" id="kpiRow"></div>
+      </article>
+
+      <article class="panel reveal">
+        <div class="panel-head">
+          <h2>当前样本高误差站点 Top 10</h2>
+        </div>
+        <ol class="top-list" id="topError"></ol>
+      </article>
+
+      <article class="panel reveal">
+        <div class="panel-head">
+          <h2>输出来源与校验</h2>
+        </div>
+        <div class="provenance" id="provenanceBox"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="./model_bundle.js"></script>
+  <script src="./station_name_map.js"></script>
+  <script src="./demo_data.js"></script>
+  <script src="./map_app.js"></script>
+</body>
+</html>

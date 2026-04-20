@@ -1,0 +1,1 @@
+﻿saved_at=2026-04-19T21:08:01.9632924+08:00 mode=baseline_no_video cmd=python ResLSTM.py --tg 15 --time_lag 6 --tg_in_one_day 72 --forecast_day_number 5 --tg_in_one_week 360 --batch_size 64 --start_epoch 50 --total_rounds 21 --disable_video
